@@ -44,3 +44,19 @@ describe('Chronal Callibration Pt 1', () => {
     });
   });
 });
+
+describe('Chronal Callibration Pt 2', () => {
+  it('finds the solution for the given test input', () => {
+    const input = '+1, -2, +3, +1';
+
+    const output = callibrator.calculateFirstRepeated(input);
+
+    assert.equal(output, 2);
+  });
+
+  it('finds the solution for the full test data set', () => {
+    const output = callibrator.calculateFirstRepeated(fullInput);
+
+    assert.equal(output, 66932);
+  });
+});
